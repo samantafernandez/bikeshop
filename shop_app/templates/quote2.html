@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}Presupuesto{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript"  src="/static/main.js"></script>
+<div id="content-main">
+  
+ 
+
+<form action="/create-post/" method="POST" id="post-form-test">
+{% csrf_token %} 
+Test
+<input type="submit" value="Send">
+</form>
+
+</div>
+{% endblock %}
+
+
+
+

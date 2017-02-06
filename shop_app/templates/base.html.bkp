@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>BikeShop</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+	
+
+    <!-- Custom styles for this template -->
+<!--     <link href="/static/bootstrap.min.css" type="text/css" rel="stylesheet"> -->
+     <link href="/static/starter-template.css" type="text/css" rel="stylesheet">
+    <link href="/static/suit.css" type="text/css" rel="stylesheet">
+    
+
+  </head>
+
+
+
+
+  <body>
+
+<!--     <nav class="navbar navbar-inverse navbar-fixed-top"> -->
+<!--       <div class="container"> -->
+<!--         <div class="navbar-header"> -->
+<!--           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> -->
+<!--             <span class="sr-only">Toggle navigation</span> -->
+<!--             <span class="icon-bar"></span> -->
+<!--             <span class="icon-bar"></span> -->
+<!--             <span class="icon-bar"></span> -->
+<!--           </button> -->
+<!--           <a class="navbar-brand" href="#">BikeShop</a> -->
+<!--         </div> -->
+<!--         <div id="navbar" class="collapse navbar-collapse"> -->
+<!--           <ul class="nav navbar-nav"> -->
+<!--             <li class="active"><a href="/quotes_main">Presupuestos</a></li> -->
+<!--             <li><a href="#about">Productos</a></li> -->
+<!--             <li><a href="#contact">Contact</a></li> -->
+<!--           </ul> -->
+<!--         </div>/.nav-collapse -->
+<!--       </div> -->
+<!--     </nav> -->
+    
+    <div class="suit-columns two-columns">
+    <div id="suit-left" class="suit-column">
+    	<div class="left-nav" id="left-nav">
+  <ul>
+    
+      
+      <li class="active">
+        <a href="/admin/"><i class="icon-home"></i>Home
+        </a>
+      </li>
+        
+        
+          <li>
+            <a href="/admin/shop_app/product/"><i class="icon-chevron-right"></i>Datos
+            </a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="/admin/shop_app/product/">Productos</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/category/">Categorias</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/brand/">Marcas</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/bike/">Bicis</a></li>
+                
+           
+              </ul>
+            
+          </li>
+        
+      
+        
+          <li>
+            <a href="/admin/importer"><i class="icon-file"></i>Importador
+            </a>
+            
+          </li>
+        
+         
+        
+        
+      
+    
+  </ul>
+</div>
+</div>
+
+<div id="suit-center" class="suit-column">
+
+    <div class="container">
+
+    {% block content %}
+    {% endblock %}
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/static/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+	</div>
+	</div> 
+  </body>
+</html>

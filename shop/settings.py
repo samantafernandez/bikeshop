@@ -38,8 +38,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djfrontend',
     'shop_app',
+   # 'djfrontend',
+    
 )
 
 MIDDLEWARE_CLASSES = (
@@ -148,6 +149,7 @@ SUIT_CONFIG = {
         
             # Custom app, no models (child links)
         {'label': 'Importador', 'url': '/admin/importer', 'icon':'icon-file'},
+        {'label': 'Generar Presupuesto', 'url': '/admin/quote', 'icon':'icon-file'},
     ),
     #===========================================================================
 

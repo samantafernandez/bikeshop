@@ -9,6 +9,6 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     
- #   url(r'^$', views.index, name='index'),
-    url(r'^list/$', views.list_products, name='list'),
+ #url(r'^$', views.index, name='index'),
+    url(r'^list/$', views.import_products, name='list'),
 ]

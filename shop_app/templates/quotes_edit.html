@@ -1,0 +1,138 @@
+{% extends "base.html" %} {% block content %}
+
+
+
+<div id="content-main">
+<h2>Editar presupuesto</h2>
+	<!--  class="inner-two-columns"	 -->
+	<div class="box ">
+	<form enctype="multipart/form-data" action="" method="post"		id="quote_form" class="form-inline" role="form">
+
+		
+			<input type="hidden" name="csrfmiddlewaretoken" value="aNW39NX5BiDhkEg7feTUGU5ZGZLbqzKO">
+
+			<div class="form-group">
+
+				<label class="required" for="id_date">Fecha:</label> 
+				<input
+					class="form_control vDateField" id="id_date" name="date" size="10"
+					type="text"> <span class="datetimeshortcuts">&nbsp;<a
+					href="javascript:DateTimeShortcuts.handleCalendarQuickLink(0, 0);">Hoy</a>&nbsp;|&nbsp;<a
+					href="javascript:DateTimeShortcuts.openCalendar(0);"
+					id="calendarlink0"><img
+						src="/static/admin/img/icon_calendar.gif" alt="Calendar"></a></span> 
+						
+				<label  for="id_client">Cliente:</label> 
+				<input	class="form-control input-large" id="id_client" maxlength="500"
+					name="description" type="text" value="Juan Perez"> 
+					
+				<label 	for="id_category">Bicicleta:</label> 
+				<select id="id_category" name="category">
+					<option value="" selected="selected">---------</option>
+					
+					<option value="1">Accesorios</option>
+				</select>
+
+
+				<button type="submit" class="btn btn-info">Guardar</button>
+				<p />
+			</div>
+			<div class="form-group">
+
+				<label for="description">Descripcion:</label>
+
+				<textarea class="field span10" " rows="5" id="description"></textarea>
+			</div>
+		
+	</form>
+</div><!-- box -->
+<h3>Agregar Item</h3>
+	<div class="box ">
+	<form enctype="multipart/form-data" action="" method="post"		id="quote_item_form" class="form-inline" role="form">
+
+		
+			<input type="hidden" name="csrfmiddlewaretoken" value="aNW39NX5BiDhkEg7feTUGU5ZGZLbqzKO">
+
+			<div class="form-group">
+
+				<label class="required" for="id_codigo">Codigo:</label> 
+					<input	class="input-mini"" id="id_codigo" maxlength="8"
+					name="codigo" type="text" value="0101001"/> 
+						
+				<label  for="id_description">Descripcion:</label> 
+					<input	class="form-control input-large" id="id_description" maxlength="500"
+					name="description" type="text" value="Inflador Giyo con palanquita"/> 
+					
+				<label 	for="id_qty">Cantidad:</label> 
+					<input	class="form-control input-mini" id="id_qty"
+					name="description" type="number" step="1 value="2"/> 
+					
+				<label 	for="id_price">Precio:</label> 
+					<input	class="form-control input-mini" id="id_price" 
+					name="description" type="number" step="0.05" value="110.00"/> 
+					
+				
+				
+				<label 	for="id_category">Subtotal:</label> 
+					<input	class="input-mini" id="id_client" maxlength="500"
+					name="description" type="number" step="0.05" value="220.00"/>
+
+
+				<button type="submit" class="btn btn-info">Agregar</button>
+				<p />
+			</div>
+			
+		
+	</form>
+</div><!-- box -->
+
+         <h2>Items</h2>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+    <thead>
+      <tr>
+      	<th scope="col" class="action-checkbox-column">
+      		<div class="text"><span><input type="checkbox" id="action-toggle" style="display: inline-block;"></span>
+                        </div>
+      	</th>
+      
+        <th class="code-column sortable column-code">
+        	<div class="text">Codigo</div>
+        </th>
+        <th>Descripcion</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row1">
+      	<td></td>
+        <td>0101001</td>
+        <td>Inflador Giyo con palanquita</td>
+        <td>2</td>
+        <td>110</td>
+        <td>220</td>
+      </tr>
+      <tr class="row2">
+      	<td></td>
+          <td>0203010</td>
+        <td>Bolso bajo asiento Shimano</td>
+        <td>1</td>
+          <td>130</td>
+           <td>130</td>
+      </tr>
+      <tr class="row1">
+      	<td></td>
+             <td>0602020</td>
+        <td>Camara CST pico auto</td>
+        <td>2</td>
+          <td>150</td>
+           <td>3</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+{% endblock %}

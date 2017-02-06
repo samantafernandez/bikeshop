@@ -1,6 +1,295 @@
-{% extends 'djfrontend/base.html' %}
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Select Producto to change | SH Bikes</title>
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="/static/suit/bootstrap/css/bootstrap.min.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/static/suit/css/suit.css" media="all">
+  
+  
+  
+  
+  
+    
+    <script type="text/javascript" src="/admin/jsi18n/"></script><style>#header + #content > #left > #rlblock_left,
+#content > #right > .dose > .dosesingle,
+#content > #center > .dose > .dosesingle
+{display:none !important;}</style>
+  
+  
+  
 
-{% block body_content %}
+  
+  <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+  <script src="/static/suit/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">var Suit = { $: $.noConflict() }; if (!$) $ = Suit.$; </script>
+  <script src="/static/suit/bootstrap/js/bootstrap.min.js"></script>
+  
+  <style type="text/css">.required:after { content: '*'; margin: 0 0 0 5px; position: absolute; color: #ccc;}</style>
+  
+  
+  
+  <script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.js"></script>
+  
+    <script type="text/javascript">
+      (function ($) {
+        $(document).ready(function ($) {
+          $("tr input.action-select").actions();
+        });
+      })(django.jQuery);
+    </script>
+  
 
-Hello
-{% endblock body_content%}
+  
+    <meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class="change-list">
+
+<!-- Sticky footer wrap -->
+<div id="wrap">
+
+  <!-- Container -->
+  
+    <div id="container">
+
+      
+        
+          <!-- Header -->
+          <div id="header" class="header">
+            <div id="branding">
+              <a href="/admin/"><h1 id="site-name">SH Bikes</h1></a>
+            </div>
+
+            
+            <div class="header-content header-content-first">
+              <div class="header-column icon">
+                <i class="icon-time"></i>
+              </div>
+              <div class="header-column">
+                <span class="date"> Sunday, 26th July 2015</span><br>
+                <span class="time" id="clock">21:01</span>
+              </div>
+            </div>
+            
+
+            
+              <!--<div class="header-content">
+                <div class="header-column icon">
+                  <i class="icon-comment"></i>
+                </div>
+                <div class="header-column">
+                  <a href="" class="grey"><b>2</b> new messages</a>
+                </div>
+              </div>-->
+            
+
+            
+              <div id="user-tools">
+                Welcome,
+                <strong>
+                  
+                    shbikes</strong>.
+                <span class="user-links">
+                
+                  
+                  
+                  <a href="/admin/password_change/">Change password</a>
+                  <span class="separator">|</span>
+                  <a href="/admin/logout/">Log out</a>
+                
+                </span>
+              </div>
+            
+            
+          </div>
+        
+        <!-- END Header -->
+      
+
+
+      <div class="suit-columns two-columns">
+
+        
+          <div id="suit-center" class="suit-column">
+
+            
+              
+    <ul class="breadcrumb">
+      <li><a href="/admin/">Home</a>
+        <span class="divider">-</span></li>
+      <li>
+        <a href="/admin/shop_app/">Shop_App</a>
+        <span class="divider">-</span></li>
+      <li class="active">Productos</li>
+    </ul>
+  
+            
+
+            
+              
+            
+
+            <!-- Content -->
+           
+            {% block content %}
+    {% endblock %}
+              
+              
+               
+  
+
+
+              
+            
+
+            <!-- END Content -->
+          </div>
+        
+
+
+        
+          
+            <div id="suit-left" class="suit-column">
+              
+                
+                  
+                   
+                  
+                
+              
+
+              
+
+
+
+<div class="left-nav" id="left-nav">
+  <ul>
+    
+      
+      <li>
+        <a href="/admin/"><i class="icon-home"></i>Home
+        </a>
+      </li>
+    
+
+    
+    
+      
+        
+        
+      
+        
+          <li class="active">
+            <a href="/admin/shop_app/product/"><i class="icon-chevron-right"></i>Datos
+            </a>
+            
+              <ul>
+                
+                  <li class="active">
+                    <a href="/admin/shop_app/product/">Productos</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/category/">Categorias</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/brand/">Marcas</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/bike/">Bicis</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/type/">Tipos</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/source/">Fuentes</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/provider/">Proveedores</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/customer/">Clientes</a></li>
+                
+                  <li>
+                    <a href="/admin/shop_app/currency/">Monedas</a></li>
+                
+              </ul>
+            
+          </li>
+        
+      
+        
+          <li>
+            <a href="/admin/importer"><i class="icon-file"></i>Importador
+            </a>
+            
+          </li>
+        
+      
+        
+          <li>
+            <a href="/admin/quote"><i class="icon-file"></i>Generar Presupuesto
+            </a>
+            
+          </li>
+        
+      
+    
+  </ul>
+</div>
+
+
+            </div>
+          
+        
+
+      </div>
+    </div>
+  
+
+  
+  <!-- Sticky footer push -->
+  <div id="push"></div>
+  
+
+</div>
+
+
+  
+  <div id="footer" class="footer">
+    <div class="content">
+      <div class="tools">
+        
+          <a href="http://djangosuit.com/support/" target="_blank" class="icon"><i class="icon-question-sign"></i>Support</a>
+         
+      </div>
+
+      <div class="copyright">
+        
+          
+        
+      </div>
+
+      <div class="branding">
+        
+          SH Bikes
+          
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="/static/suit/js/suit.js"></script>
+  
+
+
+
+</body></html>
